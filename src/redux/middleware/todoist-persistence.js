@@ -2,6 +2,7 @@ import Todoist from '../../todoist-client/Todoist';
 import { types, actions, isListBacklog, isBacklogListId } from '../modules/lists';
 import List from '../../core/List';
 import Item from "../../core/Item";
+import moment from 'moment';
 
 const todoistPersistenceMiddleware = store => next => action => {
     const state = store.getState();
@@ -124,6 +125,7 @@ const todoistPersistenceMiddleware = store => next => action => {
             break;
 
         case types.MOVE_ITEM: {
+            console.log("Move called");
             const { itemId, fromListId, toListId } = action.payload;
 
             if (fromListId === toListId) {
@@ -142,7 +144,22 @@ const todoistPersistenceMiddleware = store => next => action => {
                 .filter(listId => !isBacklogListId(listId) && listId !== fromListId)
                 .toSet().toArray();
 
-            const updatedItem = { id: item.id, labels };
+            console.log(labels);
+
+            // TODO(pbozzay): Check to see if this is a date ID. Find the new date that this item should have.
+            //const updatedItem = { id: item.id, labels };
+
+            // TODO: Do this in MST or users timezone from browser.
+            const dueDate = moment(toListId);
+            const daysFromNow = dueDate.diff(new Date(), 'days')
+            const updatedItem = { id: item.id, due: {
+                 date: dueDate.format("YYYY-MM-DD"),
+                 string: "in " + daysFromNow + " days",
+                 recurring: false,
+                }};
+            console.log("====");
+            console.log(updatedItem);
+
             Todoist.updateItem(token, updatedItem);
             break;
         }

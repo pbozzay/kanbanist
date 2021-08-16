@@ -389,15 +389,25 @@ function fetchSuccess(state, action) {
         return mapping;
     }, {});
 
+    console.log(labelList);
+    // Array containing the days of the week.
+    const weekDays = [
+        moment().add(0,'days'), //today
+        moment().add(1,'days'), //tomorrow
+        moment().add(2,'days'),
+        moment().add(3,'days'),
+        moment().add(4,'days'),
+    ];
+
     // Create Lists.
     const loadedLists = ImmutableList(
-        labelList.map(label => {
+        weekDays.map(date => {
             return new List({
-                id: label.id,
-                title: label.name,
+                id: date.toISOString(),
+                title: date.isSame(new Date(), 'Day') ? date.format("dddd") + " (Today)" : date.format("dddd"),
                 items: ImmutableList(
                     items
-                        .filter(item => item.labels.indexOf(label.id) >= 0)
+                        .filter(item => item.due == null ? false : moment(item.due.date).isSame(date, 'day'))
                         .filter(item => {
                             // FIXME: remove items without a valid project (seen in wild, unsure how it happens)
                             const project = projectIdMap[item.project_id];
@@ -494,6 +504,7 @@ function setSortBy(state, action) {
 }
 
 function moveItem(state, action) {
+    console.log("Updating list item with..." + action.payload);
     const { itemId, fromListId, toListId, itemIndex } = action.payload;
 
     const item = state.lists.push(state.backlog)

@@ -63,7 +63,7 @@ export default class Todoist {
                 const projects = todoistData['projects'];
                 projects.sort((p1, p2) => p1.item_order - p2.item_order);
 
-                // Colaborators
+                // Collaborators
                 const collaborators = todoistData['collaborators'];
 
                 return { labels, items, projects, collaborators };
@@ -142,7 +142,14 @@ export default class Todoist {
         }
         const url = `${SYNC_API_URL}?token=${apiToken}&commands=${JSON.stringify(commands)}`;
         return fetch(url)
-            .then(resp => resp.json())
+            .then(resp => { 
+                var r = resp.json(); 
+                r.then(function(data) {
+                    console.log(data);
+                });
+
+                return r;
+            })
             .catch(err => console.error('Error sending commands: ', err));
     }
 }
