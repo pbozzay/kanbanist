@@ -1,6 +1,7 @@
 {
   "name": "kanban.ist",
   "version": "1.0.0",
+  "homepage": "https://pbozzay.github.io/kanbanist/",
   "devDependencies": {
     "cross-env": "5.2.0",
     "node-sass": "^6.0.1",
