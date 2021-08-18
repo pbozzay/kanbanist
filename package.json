@@ -17,6 +17,7 @@
     "connected-react-router": "^6.6.1",
     "core-js": "^3.2.1",
     "fibers": "^4.0.2",
+    "gh-pages": "^3.2.3",
     "history": "^4.10.1",
     "immutable": "^3.8.1",
     "isomorphic-fetch": "^2.2.1",

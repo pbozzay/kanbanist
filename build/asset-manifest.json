@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2301a7ff.chunk.css",
+    "main.js": "/static/js/main.abd56f87.chunk.js",
+    "main.js.map": "/static/js/main.abd56f87.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.61b19b29.js",
+    "runtime-main.js.map": "/static/js/runtime-main.61b19b29.js.map",
+    "static/css/2.9075f2d9.chunk.css": "/static/css/2.9075f2d9.chunk.css",
+    "static/js/2.f25be8ac.chunk.js": "/static/js/2.f25be8ac.chunk.js",
+    "static/js/2.f25be8ac.chunk.js.map": "/static/js/2.f25be8ac.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2ee125a9844ed50eee8ef8c28adcb0f8.js": "/precache-manifest.2ee125a9844ed50eee8ef8c28adcb0f8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.9075f2d9.chunk.css.map": "/static/css/2.9075f2d9.chunk.css.map",
+    "static/css/main.2301a7ff.chunk.css.map": "/static/css/main.2301a7ff.chunk.css.map",
+    "static/js/2.f25be8ac.chunk.js.LICENSE.txt": "/static/js/2.f25be8ac.chunk.js.LICENSE.txt",
+    "static/media/blueprint-icons.css": "/static/media/icons-20.ca7934b3.eot",
+    "static/media/kanbanist.png": "/static/media/kanbanist.94fc37cd.png",
+    "static/media/App.css": "/static/media/pacifico-webfont.67c0cf75.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.61b19b29.js",
+    "static/css/2.9075f2d9.chunk.css",
+    "static/js/2.f25be8ac.chunk.js",
+    "static/css/main.2301a7ff.chunk.css",
+    "static/js/main.abd56f87.chunk.js"
+  ]
+}
