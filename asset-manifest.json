@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.2301a7ff.chunk.css",
-    "main.js": "/static/js/main.abd56f87.chunk.js",
-    "main.js.map": "/static/js/main.abd56f87.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.61b19b29.js",
-    "runtime-main.js.map": "/static/js/runtime-main.61b19b29.js.map",
-    "static/css/2.9075f2d9.chunk.css": "/static/css/2.9075f2d9.chunk.css",
-    "static/js/2.f25be8ac.chunk.js": "/static/js/2.f25be8ac.chunk.js",
-    "static/js/2.f25be8ac.chunk.js.map": "/static/js/2.f25be8ac.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.2ee125a9844ed50eee8ef8c28adcb0f8.js": "/precache-manifest.2ee125a9844ed50eee8ef8c28adcb0f8.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.9075f2d9.chunk.css.map": "/static/css/2.9075f2d9.chunk.css.map",
-    "static/css/main.2301a7ff.chunk.css.map": "/static/css/main.2301a7ff.chunk.css.map",
-    "static/js/2.f25be8ac.chunk.js.LICENSE.txt": "/static/js/2.f25be8ac.chunk.js.LICENSE.txt",
-    "static/media/blueprint-icons.css": "/static/media/icons-20.ca7934b3.eot",
-    "static/media/kanbanist.png": "/static/media/kanbanist.94fc37cd.png",
-    "static/media/App.css": "/static/media/pacifico-webfont.67c0cf75.woff2"
+    "main.css": "/kanbanist/static/css/main.39267c7e.chunk.css",
+    "main.js": "/kanbanist/static/js/main.7f8976e6.chunk.js",
+    "main.js.map": "/kanbanist/static/js/main.7f8976e6.chunk.js.map",
+    "runtime-main.js": "/kanbanist/static/js/runtime-main.996f1300.js",
+    "runtime-main.js.map": "/kanbanist/static/js/runtime-main.996f1300.js.map",
+    "static/css/2.12c3dc4c.chunk.css": "/kanbanist/static/css/2.12c3dc4c.chunk.css",
+    "static/js/2.80cedc23.chunk.js": "/kanbanist/static/js/2.80cedc23.chunk.js",
+    "static/js/2.80cedc23.chunk.js.map": "/kanbanist/static/js/2.80cedc23.chunk.js.map",
+    "index.html": "/kanbanist/index.html",
+    "precache-manifest.6cb5f0cd9c869bfcfe8ece0eb1128411.js": "/kanbanist/precache-manifest.6cb5f0cd9c869bfcfe8ece0eb1128411.js",
+    "service-worker.js": "/kanbanist/service-worker.js",
+    "static/css/2.12c3dc4c.chunk.css.map": "/kanbanist/static/css/2.12c3dc4c.chunk.css.map",
+    "static/css/main.39267c7e.chunk.css.map": "/kanbanist/static/css/main.39267c7e.chunk.css.map",
+    "static/js/2.80cedc23.chunk.js.LICENSE.txt": "/kanbanist/static/js/2.80cedc23.chunk.js.LICENSE.txt",
+    "static/media/blueprint-icons.css": "/kanbanist/static/media/icons-20.ca7934b3.eot",
+    "static/media/kanbanist.png": "/kanbanist/static/media/kanbanist.94fc37cd.png",
+    "static/media/App.css": "/kanbanist/static/media/pacifico-webfont.67c0cf75.woff2"
   },
   "entrypoints": [
-    "static/js/runtime-main.61b19b29.js",
-    "static/css/2.9075f2d9.chunk.css",
-    "static/js/2.f25be8ac.chunk.js",
-    "static/css/main.2301a7ff.chunk.css",
-    "static/js/main.abd56f87.chunk.js"
+    "static/js/runtime-main.996f1300.js",
+    "static/css/2.12c3dc4c.chunk.css",
+    "static/js/2.80cedc23.chunk.js",
+    "static/css/main.39267c7e.chunk.css",
+    "static/js/main.7f8976e6.chunk.js"
   ]
 }
